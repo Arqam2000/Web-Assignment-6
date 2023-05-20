@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="calculator">
+            <h1 class="center">Calculator</h1>
+            <div class="output">
+                <input type="text" disabled id="inp">
+                <input type="text" disabled id="result">
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button id="7" class="btn" onclick="input(7)">7</button>
+                    <button id="8" class="btn" onclick="input(8)">8</button>
+                    <button id="9" class="btn" onclick="input(9)">9</button>
+                    <button id="divide" class="btn bg-grey" onclick="input('/')">/</button>
+                </div>
+                <div class="row">
+                    <button id="4" class="btn" onclick="input(4)">4</button>
+                    <button id="5" class="btn" onclick="input(5)">5</button>
+                    <button id="6" class="btn" onclick="input(6)">6</button>
+                    <button id="multiply" class="btn bg-grey" onclick="input('*')">*</button>
+                </div>
+                <div class="row">
+                    <button id="1" class="btn" onclick="input(1)">1</button>
+                    <button id="2" class="btn" onclick="input(2)">2</button>
+                    <button id="3" class="btn" onclick="input(3)">3</button>
+                    <button id="add" class="btn bg-grey" onclick="input('+')">+</button>
+                </div>
+                <div class="row">
+                    <button id="point" class="btn bg-grey" onclick="input('.')">.</button>
+                    <button id="zero" class="btn" onclick="input(0)">0</button>
+                    <button id="equal" class="btn bg-orange" onclick="calc('=')">=</button>
+                    <button id="subtract" class="btn bg-grey" onclick="input('-')">-</button>
+                </div>
+                <div class="clear">
+                    <button id="clear-btn" onclick="cls()">clear</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
